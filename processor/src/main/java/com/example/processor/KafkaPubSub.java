@@ -10,7 +10,7 @@ import java.util.function.Function;
 @Configuration
 public class KafkaPubSub {
 
-    @Bean("modelProcessor")
+    /*@Bean("modelProcessor")
     public Function<KStream<String, Model>,KStream<String, Model>> modelProcessor() {
             return kstream->kstream.filter((key, value)->{
                 if(value.getIsDead()){
@@ -20,5 +20,5 @@ public class KafkaPubSub {
                 }
                 return !value.getIsDead();
             });
-    }
+    }*/
 }
